@@ -10,16 +10,90 @@ body{
     box-sizing: border-box;
 }
 
+p{
+    margin-bottom: 10px;
+    line-height: 22px;
+}
+
 .container{
-    /* border: 1px solid red; */
     width: 100%;
-    height: 100vh;
-    background-color: #f9f9f9;
+    min-height: 100vh;
+    /* border: 1px solid red; */
+    background-color: #f1f1f1;
+    padding: 2rem;
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
+.dictionary-container{
+    width: 500px;
+    max-width: 100%;
+    padding: 2rem;
+    /* border: 2px solid red; */
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 5px 5px 21px rgba(128, 128, 128, 0.561),1px 1px 5px #f1f1f1;
+}
+
+.search-bar{
+    /* border: 1px solid red; */
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+.search-bar input{
+    width: 100%;
+    border: none;
+    outline: none;
+    border: 1px solid grey;
+    color: grey;
+    padding: 7px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.search-bar button{
+    padding: 7px 15px;
+    outline: none;
+    border: 1px solid grey;
+    border-radius: 4px;
+    background-color: #f1f1f1;
+    font-size: 14px;
+    color: #222;
+    /* letter-spacing: 1px; */
+    text-transform: capitalize;
+}
+
+.result-box{
+    /* padding: 2rem; */
+    /* border: 1px solid red; */
+    margin-top: 1.9rem;
+}
+.word-name{
+    font-size: 1.7rem;
+    margin-bottom: 5px;
+    text-transform: capitalize;
+    display: inline-block;
+    /* border: 1px solid red; */
+    position: relative;
+    
+}
+
+.adjective{
+    color: grey;
+    margin-bottom: 10px;
+}
+
 button{
     cursor: pointer;
+}
+
+
+#error{
+    margin-top: 10px;
+    color: red;
+    font-size: 14px;
 }
